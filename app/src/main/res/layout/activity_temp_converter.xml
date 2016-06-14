@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.valdez.project1_tempconverter.TempConverterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/degreesLabel"
+        android:id="@+id/degreesID"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/farenheitTemp"
+        android:layout_alignStart="@+id/farenheitTemp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/farenheitLabel"
+        android:id="@+id/farenheitID"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/degreesID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celciusLabel"
+        android:id="@+id/celciusID"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/farenheitID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/celciusTemp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="@string/celcius_conversionLabel"
+        android:layout_alignBaseline="@+id/celciusID"
+        android:layout_alignBottom="@+id/celciusID"
+        android:layout_alignLeft="@+id/farenheitTemp"
+        android:layout_alignStart="@+id/farenheitTemp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/farenheitTemp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/celciusID"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

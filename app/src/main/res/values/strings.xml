@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Project1_TempConverter</string>
+    <string name="degreesLabel">Degrees</string>
+    <string name="farenheitLabel">Farenheit</string>
+    <string name="celciusLabel">Celcius</string>
+    <string name="celcius_conversionLabel">celcius conversion</string>
+</resources>
