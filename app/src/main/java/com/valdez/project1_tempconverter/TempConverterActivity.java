@@ -12,6 +12,7 @@ import java.text.NumberFormat;
 
 public class TempConverterActivity extends AppCompatActivity implements TextView.OnEditorActionListener {
 
+    // test
     // define instance variables
     private EditText conversionEditText;
     private TextView farenheitTextView;
